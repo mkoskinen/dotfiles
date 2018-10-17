@@ -109,3 +109,9 @@ export CVS_RSH=ssh
 stty intr ^C susp ^Z
 stty isig ixon
 
+# Autocompletes
+
+if which aws_zsh_completer.sh > /dev/null 2>&1
+then
+  source $(which aws_zsh_completer.sh)
+fi
