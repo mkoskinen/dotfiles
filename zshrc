@@ -109,8 +109,10 @@ export CVS_RSH=ssh
 stty intr ^C susp ^Z
 stty isig ixon
 
-# Autocompletes
+# Let's see if this is more straightforward than carrying around the configfile
+alias micro='micro -mouse false'
 
+# Autocompletes
 if which aws_zsh_completer.sh > /dev/null 2>&1
 then
   source $(which aws_zsh_completer.sh)
