@@ -110,7 +110,7 @@ stty intr ^C susp ^Z
 stty isig ixon
 
 # Let's see if this is more straightforward than carrying around the configfile
-alias micro='micro -mouse false'
+alias micro='TERM=xterm-256color micro -mouse false'
 
 # Autocompletes
 if which aws_zsh_completer.sh > /dev/null 2>&1
