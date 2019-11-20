@@ -112,6 +112,8 @@ stty isig ixon
 # Let's see if this is more straightforward than carrying around the configfile
 alias micro='TERM=xterm-256color micro -mouse false'
 
+alias sshio='ssh -o IdentitiesOnly=yes'
+
 # Autocompletes
 if which aws_zsh_completer.sh > /dev/null 2>&1
 then
