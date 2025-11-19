@@ -1,3 +1,4 @@
-hardstatus alwayslastline
-hardstatus string '%{= kG}[ %{G}%H %{g}][%= %{=kw}%?%-Lw%?%{r}(%{W}%n*%f%t%?(%u)%?%{r})%{w}%?%+Lw%?%?%= %{g}][%{B}%Y-%m-%d %{W}%c %{g}]'
-
+truecolor on
+term xterm-256color
+hardstatus off
+hardstatus alwayslastline '%{= .;#444444}%{#00ff00;#444444} %H %{#ffffff;#444444}|%{= .;#444444} %-w%{= #ff0000;#444444}[%{= #ffffff;#444444}%n %t%{= #ff0000;#444444}]%{= .;#444444}%+w %-= %{#ffff00;#444444}%101`%{#ffffff;#444444}|%D %M %d %Y%{= #00ffff;#444444} %c%{-}'

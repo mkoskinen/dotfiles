@@ -119,3 +119,8 @@ if which aws_zsh_completer.sh > /dev/null 2>&1
 then
   source $(which aws_zsh_completer.sh)
 fi
+
+# Work env variables
+[[ -f ~/.workrc ]] && source ~/.workrc
+
+setopt INTERACTIVE_COMMENTS
